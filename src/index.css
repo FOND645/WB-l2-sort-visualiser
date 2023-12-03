@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.methods-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.page-button {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.radio-button {
+    cursor: pointer;
+}
+
+.control-pannel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.speed-container {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.input-delay {
+    width: 8rem;
+}
+
+.values-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#stop-button {
+    color: gray;
+}

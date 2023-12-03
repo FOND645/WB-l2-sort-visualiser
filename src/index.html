@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <script type="module" src="js/index.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <canvas id="visual" width="800" height="600"></canvas>
+        <div class="control-pannel">
+            <div class="counters-container">
+                <p>Чтений массива: <span id="read-counter">0</span></p>
+                <p>Записей в массив: <span id="write-counter">0</span></p>
+            </div>
+            <div class="methods-container">
+                <div class="method-container">
+                    <input type="radio" id="sort-type-1" name="sort-type" value="bubble" class="radio-button" checked />
+                    <label for="sort-type-1">Сортировать пузырьком</label>
+                </div>
+
+                <div class="method-container">
+                    <input type="radio" id="sort-type-2" name="sort-type" value="insert" class="radio-button" />
+                    <label for="sort-type-2">Сортировать вставкой</label>
+                </div>
+
+                <div class="method-container">
+                    <input type="radio" id="sort-type-3" name="sort-type" value="replace" class="radio-button" />
+                    <label for="sort-type-3">Сортировать перестановкой</label>
+                </div>
+
+                <div class="method-container">
+                    <input type="radio" id="sort-type-4" name="sort-type" value="select" class="radio-button" />
+                    <label for="sort-type-4">Сортировать выбором</label>
+                </div>
+
+                <div class="method-container">
+                    <input type="radio" id="sort-type-5" name="sort-type" value="shell" class="radio-button" />
+                    <label for="sort-type-5">Сортировать по Шеллу</label>
+                </div>
+            </div>
+            <div class="speed-container">
+                <label for="input-delay">Задержка между операциями (мс)</label>
+                <input type="number" id="input-delay" class="input-delay" name="input-delay" value="10" />
+            </div>
+            <div class="values-container">
+                <label for="values">Значения для сортировки</label>
+                <textarea name="values" id="values-textarea" cols="30" rows="6"></textarea>
+                <p class="page-button" id="push-random-button">Заполнить рандомом</p>
+            </div>
+            <p class="page-button" id="start-button">СТАРТ</p>
+            <p class="page-button" id="stop-button">СТОП</p>
+        </div>
+    </body>
+</html>
